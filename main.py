@@ -17,7 +17,17 @@ import csv
 
 ### CSV File Reading
 
+# Read Address CSV
 
+with open("csv/address.csv") as addressFile:
+    addressReader = csv.reader(addressFile)
+    addressReader = list(addressReader)
+
+# Read Distance CSV
+
+with open("csv/distance.csv") as distanceFile:
+    distanceReader = csv.reader(distanceFile)
+    distanceReader = list(distanceReader)
 
 ### Hash Table Class
 
